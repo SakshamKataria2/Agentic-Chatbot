@@ -58,7 +58,7 @@ async function sendMessage() {
     chatWindow.appendChild(loadingDiv);
 
     try {
-        const response = await fetch('http://localhost:8000/api/chat', {
+        const response = await fetch('https://agentic-chatbot-sos8.onrender.com/api/chat', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ 
