@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T3 Chat Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header>
+            <h2>Multi-Agent Chat</h2>
+            <div class="controls">
+                <select id="model-select" aria-label="Select AI Model" title="Select AI Model">
+                    <option value="gemini">Google Gemini (Default)</option>
+                    <option value="claude">Anthropic Claude</option>
+                    <option value="groq">Groq (Llama 3)</option>
+                    <option value="ollama">Ollama Local (Llama 3)</option>
+                </select>
+                <input type="password" id="api-key-input" aria-label="Enter API Key" style="display: none;">
+            </div>
+        </header>
+
+        <main id="chat-window" class="chat-window"></main>
+
+        <div class="input-area">
+            <textarea id="message-input" placeholder="Type your message here..." aria-label="Type your chat message"></textarea>
+            <button id="send-btn" aria-label="Send message">Send</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
